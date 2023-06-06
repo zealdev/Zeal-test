@@ -1,15 +1,3 @@
-<div class="test">
-  <p>
-    {{ section.settings.title }}
-  </p>
-  <div class="image">
-    <img src="{{section.settings.image | img_url: 'medium'}}" alt="">
-    <img src="{{section.settings.image2 | img_url: 'medium'}}" alt="">
-    <img src="{{section.settings.image3 | img_url: 'medium'}}" alt="">
-    <img src="{{section.settings.image4 | img_url: 'medium'}}" alt="">
-  </div>
-</div>
-
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
@@ -37,6 +25,18 @@
     </div>
   {%- endcase -%}
 {%- endfor -%}
+
+<div class="test">
+  <h2>
+    {{ section.settings.title }}
+  </h2>
+  <div class="image">
+    <img src="{{section.settings.image | img_url: 'medium'}}" alt="">
+    <img src="{{section.settings.image2 | img_url: 'medium'}}" alt="">
+    <img src="{{section.settings.image3 | img_url: 'medium'}}" alt="">
+    <img src="{{section.settings.image4 | img_url: 'medium'}}" alt="">
+  </div>
+</div>
 
 {% schema %}
   {
