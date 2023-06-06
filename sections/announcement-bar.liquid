@@ -1,6 +1,13 @@
 <div class="test">
-  {{ section.settings.title }}
-  <img src="{{section.settings.image | img_url: 'medium'}}" alt="">
+  <p>
+    {{ section.settings.title }}
+  </p>
+  <div class="image">
+    <img src="{{section.settings.image | img_url: 'medium'}}" alt="">
+    <img src="{{section.settings.image2 | img_url: 'medium'}}" alt="">
+    <img src="{{section.settings.image3 | img_url: 'medium'}}" alt="">
+    <img src="{{section.settings.image4 | img_url: 'medium'}}" alt="">
+  </div>
 </div>
 
 {%- for block in section.blocks -%}
@@ -41,10 +48,25 @@
         "type": "text",
         "id": "title",
         "label": "Title"
-      }, {
+      },
+      {
         "type": "image_picker",
         "id": "image",
         "label": "Test Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "Test Image2"
+      },
+      {
+        "type": "image_picker",
+        "id": "image3",
+        "label": "Test Image3"
+      }, {
+        "type": "image_picker",
+        "id": "image4",
+        "label": "Test Image4"
       }
     ],
     "blocks": [
