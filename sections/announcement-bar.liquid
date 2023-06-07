@@ -27,13 +27,14 @@
 {%- endfor -%}
 
 <div class="test">
-  <p>
-    {{ section.settings.title }}
-  </p>
+  <div class="overlay">
+    <p>
+      {{ section.settings.title }}
+    </p>
+  </div>
   <div class="image">
     <img src="{{section.settings.image | img_url: 'medium'}}" alt="">
     <img src="{{section.settings.image2 | img_url: 'medium'}}" alt="">
-    <img src="{{section.settings.image3 | img_url: 'medium'}}" alt="">
     <img src="{{section.settings.image4 | img_url: 'medium'}}" alt="">
   </div>
 </div>
@@ -48,21 +49,14 @@
         "type": "text",
         "id": "title",
         "label": "Title"
-      },
-      {
+      }, {
         "type": "image_picker",
         "id": "image",
         "label": "Test Image"
-      },
-      {
+      }, {
         "type": "image_picker",
         "id": "image2",
         "label": "Test Image2"
-      },
-      {
-        "type": "image_picker",
-        "id": "image3",
-        "label": "Test Image3"
       }, {
         "type": "image_picker",
         "id": "image4",
