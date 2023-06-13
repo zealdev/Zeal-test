@@ -27,6 +27,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-06-06_144634.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
