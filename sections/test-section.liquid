@@ -1,13 +1,16 @@
+<div class="test">
+  <p>{{ section.settings.title }}</p>
+  <div class="test2">
+    <img src="{{section.settings.image | img_url : 'medium'}}">
+    <p>{{ section.settings.text-area }}</p>
+  </div>
+</div>
+
 {% schema %}
   {
     "name": "Test section",
-    "tag": "div",
     "settings": [
       {
-        "type": "header",
-        "id": "test-header",
-        "label": "Test header"
-      }, {
         "type": "text",
         "id": "title",
         "label": "Title"
@@ -17,8 +20,21 @@
         "label": "Test image"
       }, {
         "type": "collection",
-        "id": "test-collection",
+        "id": "collection",
         "label": "Test collection"
+      }, {
+        "type": "textarea",
+        "id": "text-area",
+        "label": "Text area"
+      }
+    ],
+    "templates": [
+      "index", "page", "product"
+    ],
+    "presets": [
+      {
+        "name": "Test section",
+        "category": "Testing section"
       }
     ]
   }
