@@ -28,7 +28,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2023-06-06_144634.png",
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 20,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
@@ -42,6 +42,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -66,10 +67,26 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "b8a393db-f072-4dc4-8661-9a77da080323": {
+      "type": "video",
+      "settings": {
+        "heading": "<a href=\"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc\" target=\"_blank\" title=\"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc\">Video<\/a>",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/Zeal Social Video - 30 Second.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 32,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "b8a393db-f072-4dc4-8661-9a77da080323"
   ]
 }
